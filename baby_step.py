@@ -26,7 +26,7 @@ with sr.Microphone() as source:
             plt.xlabel('Months')
             plt.ylabel('Quantity/Return')
             plt.show()
-        elif 'yes' in voice_data:
+        elif 'white' in voice_data:
             graph = pd.read_excel('C:\\Users\\16478\\Desktop\\data_base\\sales.xlsx','Sales')
             plt.scatter(graph['Months'],graph['Quantity'],graph['Return'])
             plt.title('Monthly Sales/Returns')
