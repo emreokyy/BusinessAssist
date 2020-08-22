@@ -18,7 +18,7 @@ with sr.Microphone() as source:
             plt.xlabel('Months')
             plt.ylabel('Quantity/Return')
             plt.show()
-        elif 'no' in voice_data:
+        elif 'no way' in voice_data:
             graph = pd.read_excel('C:\\Users\\16478\\Desktop\\data_base\\sales.xlsx','Sales')
             plt.bar(graph['Months'],graph['Quantity'],graph['Return'])
             plt.title('Monthly Sales/Returns')
